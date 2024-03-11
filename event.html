@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <title>Halaman Beranda</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Arenta Putri Maharani">
     <meta name="nim" content="233307034">
     <style>
@@ -49,6 +48,7 @@
             padding: 10px;
             text-align: center;
             color: white;
+            clear: both;
         }
         @media (max-width: 600px) {
             nav, articel {
@@ -59,7 +59,6 @@
     </style>
 </head>
 <body>
-    <script src="js/main.js"></script>
     <header>
         <h2>Judul Website</h2>
     </header>
@@ -67,22 +66,40 @@
         <nav>
             <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="gambar.jpg">Gambar</a></li>
-            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp">Event</a></li>
-            <li><a href="audio/">Audio</a></li>
-            <li><a href="video/">Video</a></li>
+            <li><a href="gambar/"> Gambar</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="audio">Audio</a></li>
+            <li><a href="vidio">Vidio</a></li>
             <li><a href="svg.html">SVG</a></li>
             <li><a href="https://www.canva.com/id_id/">Canvas</a></li>
         </ul>
         </nav>
         <article>
             <h1>Judul Artikel</h1>
-            <canvas id="canvas" width="400" height="400" style="background-color: #333;">
-            </canvas>
+            <table>
+                <tr>
+           <td><img src="gambar.jpg" alt="deskripsi" width="200px" id="gambar"></td>
+           <td><img src="gambar1.jpg" alt="deskripsi" width="200px" id="gambar1"></td>
+           <td><img src="gambar2.jpg" alt="deskripsi" width="200px"> id="gambar2"</td>
+                </tr>
+                <tr>
+            <td><img src="gambar4.jpg" alt="deskripsi"  width="200px"></td>
+            <td><img src="gambar5.jpg" alt="deskripsi"  width="200px"></td>
+            <td><img src="gambar6.jpg" alt="deskripsi"  width="200px"></td>
+            </tr>
+            </table>
             <p>    </p>
         </article>
     </section>
     <footer>
+        <script>
+           document.get Element By Id("gambar1").add Event Listener("click", function() {
+            alert("Anda mengklik Gambar 1!");
+        }); 
+            document.get Element By Id("gambar2").add Event Listener("mouseover", function() {
+            alert("Anda mengarahkan mouse ke Gambar 2!");
+        });
+        </script>
         <p>   </p>
     </footer>
 </body>
